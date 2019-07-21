@@ -25,8 +25,10 @@
       methods: {
         getData: function() { 
           var vm = this;
+          // console.log('this1=',this);
           axios.get('https://jsonplaceholder.typicode.com/users/')
             .then(function(response) {
+              // console.log('this2=',this);
               console.log(response.data);
               vm.users = response.data;
             })
