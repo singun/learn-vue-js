@@ -2,7 +2,7 @@
   <div id="app">
     <todo-header></todo-header>
     <todo-input></todo-input>
-    <todo-list v-bind:propsdata="todoItems"></todo-list>
+    <todo-list></todo-list>
     <todo-footer></todo-footer>
   </div>
 </template>
@@ -15,11 +15,6 @@ import TodoFooter from './components/TodoFooter.vue'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      todoItems: []
-    }
-  },
   components: {
     // '컴포넌트 이름': '컴포넌트 내용'
     'todo-header': TodoHeader,
